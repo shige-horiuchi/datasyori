@@ -2,7 +2,7 @@ import pandas as pd
 import glob
 import csv
 
-path = r'C:\Users\s.horiuchi\Documents\Python\auto'
+path = r'C:\Users\s.horiuchi\Documents\Python\datasyori'
 allfiles = glob.glob(path + r'\受注*.csv')
 
 list = []
