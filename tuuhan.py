@@ -5,7 +5,7 @@ from openpyxl import Workbook
 
 now = time.ctime()
 start = time.strptime(now)
-print('開始時間：', time.strftime("%Y/%m/%d %H:%M", start))
+print('開始時間：', time.strftime("%Y/%m/%d %H:%M:%S", start))
 
 # ファイル読込み
 s = time.time()
@@ -71,4 +71,4 @@ print('　出力：', syori)
 
 now = time.ctime()
 end = time.strptime(now)
-print('終了時間：', time.strftime("%Y/%m/%d %H:%M", end))
+print('終了時間：', time.strftime("%Y/%m/%d %H:%M:%S", end))
