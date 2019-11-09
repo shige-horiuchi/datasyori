@@ -1,11 +1,11 @@
 import pandas as pd
 import time
+import datetime
 import csv
 from openpyxl import Workbook
 
-now = time.ctime()
-start = time.strptime(now)
-print('開始時間：', time.strftime("%Y/%m/%d %H:%M:%S", start))
+now_s = datetime.datetime.now()
+print('開始時間：', now_s)
 
 # ファイル読込み
 s = time.time()
@@ -69,6 +69,8 @@ e = time.time()
 syori = e - s
 print('　出力：', syori)
 
-now = time.ctime()
-end = time.strptime(now)
-print('終了時間：', time.strftime("%Y/%m/%d %H:%M:%S", end))
+now_e = datetime.datetime.now()
+print('終了時間：', now_e)
+
+syori_t = now_e - now_s
+print('処理時間：', syori_t)

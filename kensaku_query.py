@@ -1,8 +1,8 @@
 import pandas as pd
-import re
+# import re
 import csv
 
-df = pd.read_csv('受注new.csv', encoding = 'CP932', header = 0)
+df = pd.read_csv('受注old.csv', encoding = 'CP932', header = 0)
 
 kensaku_key = 'セット'
 
